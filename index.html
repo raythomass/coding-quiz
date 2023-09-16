@@ -9,10 +9,35 @@
 </head>
 
 <body>
-    <nav>
-        <button class="leaderboard-button">View Leaderboards</button>
-        <h2 class="quiz-timer">Time</h2>
+    <nav class="navbar">
+        <section>
+            <button class="leader-btn">View Leaderboards</button>
+        </section>
+
+        <section>
+            <h2 id="quiz-timer"></h2>
+        </section>
     </nav>
-    
+
+    <section class="title-elements">
+        <h1 class="quiz-title"></h1>
+        <p class="quiz-descr"></p>
+        <button class="start-quiz"></button>
+    </section>
+
+    <section class="question-section">
+        <h1 id="question-title"> Hello I am a Question!</h1>
+        <section class="answer-buttons">
+            <button id="answer-one">Javascript </button>
+            <br>
+            <button id="answer-two">HTML</button>
+            <br>
+            <button id="answer-three">Style Sheets</button>
+            <br>
+            <button id="answer-four">React</button>
+        </section>
+    </section>
+
+    <script src="./assets/scripts/scripts.js"></script>
 </body>
 </html>
