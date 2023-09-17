@@ -59,7 +59,7 @@ nav{
 .answer-buttons{
 }
 
-#answer-one{
+.answer{
     background-color:rgb(221, 178, 240) ;
     text-align: left;
     width: 200px;
@@ -67,7 +67,7 @@ nav{
     margin: 5px;
     margin-left: 0px;
 }
-#answer-two{
+/* #answer-two{
     background-color:rgb(221, 178, 240) ;
     text-align: left;
     width: 200px;
@@ -90,4 +90,4 @@ nav{
     padding: 10px;
     margin: 5px;
     margin-left: 0px;
-}
+} */
