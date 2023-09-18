@@ -67,7 +67,30 @@ nav{
     margin: 5px;
     margin-left: 0px;
 }
-/* #answer-two{
+
+.question-end{
+    display: flex;
+    flex-direction: column;
+}
+
+#question-end-title{
+        font-size: 30px;
+        font-weight: bold;
+}
+
+.question-end p{
+    font-size: 20px;
+}
+
+.input-initials{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 200px;
+}
+
+.submit-button{
     background-color:rgb(221, 178, 240) ;
     text-align: left;
     width: 200px;
@@ -75,19 +98,7 @@ nav{
     margin: 5px;
     margin-left: 0px;
 }
-#answer-three{
-    background-color:rgb(221, 178, 240) ;
-    text-align: left;
-    width: 200px;
-    padding: 10px;
-    margin: 5px;
-    margin-left: 0px;
-}
-#answer-four{
-    background-color:rgb(221, 178, 240) ;
-    text-align: left;
-    width: 200px;
-    padding: 10px;
-    margin: 5px;
-    margin-left: 0px;
-} */
+
+.hidden{
+    display: none;
+} 
