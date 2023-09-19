@@ -8,6 +8,7 @@ This Coding Quiz tests the user's knowledge of coding with a simple quiz. This q
 ## Installation
 
 No steps involved. Just follow this link:
+https://raythomass.github.io/coding-quiz/
 
 
 ## Usage
