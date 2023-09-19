@@ -1,5 +1,6 @@
 var quizTimer = document.getElementById("quiz-timer");
 var leaderBtn = document.querySelector(".leader-btn")
+var startingEl = document.querySelector('.title-elements');
 var quizTitle = document.querySelector(".quiz-title");
 var quizDescr = document.querySelector(".quiz-descr");
 var startBtn = document.querySelector('.start-quiz');
@@ -11,6 +12,14 @@ var btnElThree = document.createElement("button");
 var btnElFour = document.createElement("button");
 var answerClass = document.querySelector('.answer');
 var questionEnd = document.querySelector('.question-end');
+var questionEndTitle = document.getElementById('question-end-title');
+var questionEndDescr = document.querySelector('.question-end-descr');
+var setScore = document.getElementById('set-score');
+var inputInitials = document.querySelector('.input-initials');
+var leaderTitle = document.querySelector('.leaderboard-title')
+var leaderEntry = document.querySelector('.leader-entry')
+var submitAnswerBtn = document.querySelector('.submit-button');
+var homeButton = document.querySelector('.home-button');
 // var answerOne = document.getElementById("answer-one");
 // var answerTwo = document.getElementById("answer-two");
 // var answerThree = document.getElementById("answer-three");
@@ -25,7 +34,6 @@ var btnSubmitScore = document.getElementById("submit-score")
 //   document.createElement ul... 
 //   FOR loop of all players, document.createElement li... li.textContent = whatever was in the object that's iterated (player name, player score)... append to ul
 
-var timeScore = localStorage.getItem('time-score');
 var timeInterval = null;
 var seconds = 30;
 
@@ -55,14 +63,45 @@ var questionFive = {
     correctAnswer : 'Console.log'
 };
 
+submitAnswerBtn.addEventListener('click', function(){
+    localStorage.setItem("player", inputInitials.value);
+    localStorage.setItem('time', quizTimer.textContent.split(" ")[1]);
+    leaderboardScreen();
+});
+
+leaderBtn.addEventListener('click', function(){
+    startingEl.classList.add("hidden");
+    leaderboardScreen();
+});
+
+function leaderboardScreen(){
+    questionEnd.classList.add("hidden");
+    leaderTitle.textContent = "Leaderboard"
+
+    leaderEntry.classList.remove('hidden');
+    leaderEntry.textContent = localStorage.getItem("player", inputInitials.value) + localStorage.getItem('time', quizTimer.textContent.split(" ")[1]);
+
+    homeButton.classList.remove('hidden');
+    homeButton.textContent = "Home Screen";
+}
+
+homeButton.addEventListener('click', function(){
+    refresh;
+});
+
 function endQuiz(){
     questionSection.classList.add("hidden");
     questionEnd.classList.remove("hidden");
+    questionEndTitle.textContent = "Time is Up!";
+    questionEndDescr.textContent = "Enter your initials and press submit to record your scores.";
+    setScore.textContent = parseInt(quizTimer.textContent.split(" ")[1]);
+
 }
 
 function subtractTime(){
     seconds--;
 }
+
 function startQuiz(){
     quizTitle.textContent = "Coding Quiz";
     quizDescr.textContent = "Test your coding knowledge with this timed quiz";
