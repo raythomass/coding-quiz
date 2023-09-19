@@ -32,10 +32,21 @@
     </section>
 
     <section class="question-end hidden">
-        <h1 id="question-end-title">hello</h1>
-        <p>kanjscjklsnc</p>
-        <input type="text" class="input-initials">
+        <h1 id="question-end-title"></h1>
+        <p class="question-end-descr"></p>
+        <section class="score-input">
+            <input type="text" class="input-initials">
+            <h1 id="set-score"></h1>
+        </section>
         <button class="submit-button">Submit</button>
+    </section>
+
+    <section class="leader-screen">
+        <h1 class="leaderboard-title"></h1>
+        <ul>
+            <li class="leader-entry hidden"></li>
+        </ul>
+        <button onClick="window.location.reload();" class="home-button hidden"></button>
     </section>
 
     <script src="./assets/scripts/scripts.js"></script>

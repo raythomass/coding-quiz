@@ -71,15 +71,17 @@ nav{
 .question-end{
     display: flex;
     flex-direction: column;
+    margin-left: 350px;
 }
 
 #question-end-title{
-        font-size: 30px;
-        font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .question-end p{
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .input-initials{
@@ -91,6 +93,46 @@ nav{
 }
 
 .submit-button{
+    background-color:rgb(221, 178, 240) ;
+    text-align: left;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+#set-score{
+    font-size: 25px;
+}
+
+.score-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+
+.leader-screen{
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px;
+}
+
+.leaderboard-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.leader-entry{
+    font-size: 20px;
+    background-color:rgb(245, 221, 255) ;
+    max-width: 350px;
+    padding: 10px;
+}
+
+.home-button{
     background-color:rgb(221, 178, 240) ;
     text-align: left;
     width: 200px;
