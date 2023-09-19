@@ -3,21 +3,16 @@
 
 ## Description
 
-This Coding Quiz tests the user's knowledge of cosing with a simple quiz. This quiz gives multiple choices to each question and then logs the score as the amount of time left in the quiz when it was finished.
+This Coding Quiz tests the user's knowledge of coding with a simple quiz. This quiz gives multiple choices to each question and then logs the score as the amount of time left in the quiz when it was finished.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No steps involved. Just follow this link:
+
 
 ## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Follow the prompts to take the quiz. Once you finish the questions, enter your initials into the prompt and submit. You will then be shown the leaderboard with your initials and score.
+    ![alt text](assets/coding-quiz.jpg)
 
 ## Credits
 
